@@ -1,0 +1,23 @@
+// Colors
+$background: #edece4;
+$border: #cbc6b9;
+$primary-color: #2a2426;
+$secondary-color: #988c77;
+
+// Fonts
+$primary-font: "PT Mono", "monospace";
+$secondary-font: "Aref Ruqaa", serif;
+
+// Mixins
+@mixin typography-1($size: 1.2rem) {
+  font-family: $primary-font;
+  font-size: $size;
+  line-height: 30px;
+  font-weight: normal;
+}
+@mixin typography-2($size: 1.8rem) {
+  font-family: $secondary-font;
+  font-size: $size;
+  line-height: 30px;
+  font-weight: normal;
+}

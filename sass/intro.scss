@@ -1,0 +1,34 @@
+.main-container {
+  margin-top: 20px;
+  @include mobile {
+    margin-top: 20px;
+  }
+  .logo {
+    padding-bottom: 60px;
+  }
+  p {
+    border-right: 2px solid $primary-color;
+    max-width: 320px;
+    @include typography-1;
+  }
+}
+.operation {
+  padding-bottom: 10px;
+  border-bottom: 2px solid $primary-color;
+  @include mobile {
+    padding-right: 20px;
+  }
+}
+.informations {
+  padding-top: 10px;
+}
+.tel {
+  color: $secondary-color;
+  @include mobile {
+    margin-bottom: 40px;
+  }
+}
+.intro-photo {
+  border: 10px solid $border;
+  box-sizing: border-box;
+}

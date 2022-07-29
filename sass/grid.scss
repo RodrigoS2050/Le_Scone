@@ -1,0 +1,36 @@
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+%grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 40px 40px 0 40px;
+  @include mobile {
+    grid-template-columns: 1fr;
+    padding: 10px 10px 0 10px;
+    justify-items: center;
+  }
+}
+.main-container {
+  @extend %grid;
+}
+.foods-container {
+  @extend %grid;
+}
+.contact-container {
+  @extend %grid;
+}
+.flex-contact {
+  display: flex;
+  gap: 30px;
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}

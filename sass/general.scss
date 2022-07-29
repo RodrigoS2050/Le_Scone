@@ -1,0 +1,29 @@
+body {
+  background-color: $background;
+  border: 10px solid $border;
+  color: $primary-color;
+  @include mobile {
+    border: none;
+  }
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.title {
+  @include typography-1;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  @include mobile {
+    margin-bottom: 40px;
+  }
+  &::after {
+    content: "";
+    display: block;
+    width: 65%;
+    height: 2px;
+    background-color: $secondary-color;
+  }
+}

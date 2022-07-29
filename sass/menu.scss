@@ -1,0 +1,37 @@
+.menu {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  @include mobile {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+.dish-one {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.dish-two {
+  margin-top: 30px;
+}
+.menu-item {
+  position: relative;
+  h3 {
+    @include typography-2;
+    margin-bottom: 40px;
+  }
+  span {
+    @include typography-1;
+    color: $secondary-color;
+    margin-left: -80px;
+  }
+  @include mobile {
+    margin-left: 100px;
+  }
+  p {
+    @include typography-2(1.4rem);
+  }
+  img {
+    border-radius: 50%;
+    border: 10px solid $border;
+  }
+}

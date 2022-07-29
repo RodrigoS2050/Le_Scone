@@ -1,0 +1,17 @@
+.footer-container {
+  padding: 20px 0;
+  background-color: $primary-color;
+  box-shadow: 0 0 0 10px $primary-color;
+  p {
+    color: $background;
+    @include typography-1;
+    @include mobile {
+      @include typography-1(1rem);
+      padding-left: 20px;
+    }
+  }
+  img {
+    box-sizing: border-box;
+    margin-right: 40px;
+  }
+}

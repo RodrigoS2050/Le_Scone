@@ -1,0 +1,64 @@
+.contact {
+  margin-bottom: 120px;
+  @include mobile {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+.contact form {
+  label {
+    @include typography-1;
+    display: block;
+  }
+  input,
+  textarea {
+    @include typography-1;
+    color: $primary-color;
+    padding: 0 5px;
+    height: 40px;
+    border: 2px solid $border;
+    background-color: transparent;
+    margin-bottom: 1rem;
+    width: 100%;
+    &:hover,
+    &:focus {
+      outline: none;
+      border-color: $secondary-color;
+    }
+    @include mobile {
+      width: 80%;
+    }
+  }
+  textarea {
+    height: 120px;
+  }
+}
+.btn {
+  @include typography-1;
+  cursor: pointer;
+  color: $secondary-color;
+  text-transform: uppercase;
+  border: 2px solid $secondary-color;
+  background-color: transparent;
+  display: block;
+  width: 200px;
+  padding-top: 5px;
+  box-shadow: (5px 5px 0 -2px $border, 5px 5px 0 0 $secondary-color);
+  transition: 0.3s;
+  &:hover {
+    box-shadow: (3px 3px 0 -2px $border, 3px 3px 0 0 $secondary-color);
+  }
+  @include mobile {
+    width: 140px;
+  }
+}
+.contact p {
+  max-width: 20ch;
+  @include typography-1(1rem);
+  color: $secondary-color;
+}
+.contact img {
+  display: block;
+  box-shadow: 0 0 0 10px $border;
+  margin-top: 40px;
+}
