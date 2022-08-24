@@ -1,6 +1,6 @@
 # Le Scone
 
-É um projeto de um site para uma Cafeteria fictícia feito no curso da Origamid com o propósito de treinar e evoluir em SASS.
+É um projeto de um site para uma Cafeteria fictícia feito no curso da [Origamid](https://www.origamid.com) com o propósito de treinar e evoluir em SASS.
 
 # Projeto completo (Web)
 
